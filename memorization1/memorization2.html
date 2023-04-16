@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>単語帳2</title>
+        <title>Memorization No.1</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
         <!--ウィンドウサイズ-->
@@ -19,14 +19,13 @@
     <body>
         <header>
             <!--タイトル-->
-            <div class="header-title">単語帳2</div>
+            <div class="header-title">Memorization No.1</div>
             <div>
                 <div class="openbtn"><span></span><span></span><span></span></div>
                 <!--メニュー-->
                 <nav class="header-menu">
                     <ul>
-                        <li class="header-menu-item"><a href="#">HOME</a></li>
-                        <li class="header-menu-item"><a href="#">WORKS</a></li>
+                        <li class="header-menu-item"><a href="../index.html">HOME</a></li>
                     </ul>
                 </nav>                
             </div>
@@ -36,76 +35,84 @@
 
         <main>
             <section class="text-input">
-                <div>
-                    <div class="choice-title">単語帳作成</div>
-                    <div class="input-frame">
-                        <div class="input-frame-item">
-                            <div>
-                                <label>英単語1：</label>
-                                <input type="text" id="English-spelling-input1"  class="English-spelling-input English-spelling1">
+                <div class="open-close-frame">
+                    <div>
+                        <div class="choice-title">単語帳作成</div>
+                        <div class="input-frame">
+                            <div class="input-frame-item">
+                                <div>
+                                    <label>英単語1：</label>
+                                    <input type="text" id="English-spelling-input1"  class="English-spelling-input English-spelling1">
+                                </div>
+                                <div>
+                                    <label>日本語1：</label>
+                                    <input type="text" id="Japanese-spelling-input1" class="Japanese-spelling-input Japanese-spelling1">
+                                </div>
                             </div>
-                            <div>
-                                <label>日本語1：</label>
-                                <input type="text" id="Japanese-spelling-input1" class="Japanese-spelling-input Japanese-spelling1">
+                            <div class="input-frame-item">
+                                <div>
+                                    <label>英単語2：</label>
+                                    <input type="text" id="English-spelling-input2" class="English-spelling-input English-spelling2">
+                                </div>
+                                <div>
+                                    <label>日本語2：</label>
+                                    <input type="text" id="Japanese-spelling-input2" class="Japanese-spelling-input Japanese-spelling2">
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-frame-item">
-                            <div>
-                                <label>英単語2：</label>
-                                <input type="text" id="English-spelling-input2" class="English-spelling-input English-spelling2">
+                            <div class="input-frame-item">
+                                <div>
+                                    <label>英単語3：</label>
+                                    <input type="text" id="English-spelling-input3" class="English-spelling-input English-spelling3">
+                                </div>
+                                <div>
+                                    <label>日本語3：</label>
+                                    <input type="text" id="Japanese-spelling-input3" class="Japanese-spelling-input Japanese-spelling3">
+                                </div>
                             </div>
-                            <div>
-                                <label>日本語2：</label>
-                                <input type="text" id="Japanese-spelling-input2" class="Japanese-spelling-input Japanese-spelling2">
+                            <div class="input-frame-item">
+                                <div>
+                                    <label>英単語4：</label>
+                                    <input type="text" id="English-spelling-input4" class="English-spelling-input English-spelling4">
+                                </div>
+                                <div>
+                                    <label>日本語4：</label>
+                                    <input type="text" id="Japanese-spelling-input4" class="Japanese-spelling-input Japanese-spelling4">
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-frame-item">
-                            <div>
-                                <label>英単語3：</label>
-                                <input type="text" id="English-spelling-input3" class="English-spelling-input English-spelling3">
-                            </div>
-                            <div>
-                                <label>日本語3：</label>
-                                <input type="text" id="Japanese-spelling-input3" class="Japanese-spelling-input Japanese-spelling3">
-                            </div>
-                        </div>
-                        <div class="input-frame-item">
-                            <div>
-                                <label>英単語4：</label>
-                                <input type="text" id="English-spelling-input4" class="English-spelling-input English-spelling4">
-                            </div>
-                            <div>
-                                <label>日本語4：</label>
-                                <input type="text" id="Japanese-spelling-input4" class="Japanese-spelling-input Japanese-spelling4">
-                            </div>
-                        </div>
-                        <div class="input-frame-item">
-                            <div>
-                                <label>英単語5：</label>
-                                <input type="text" id="English-spelling-input5" class="English-spelling-input English-spelling5">
-                            </div>
-                            <div>
-                                <label>日本語5：</label>
-                                <input type="text" id="Japanese-spelling-input5" class="Japanese-spelling-input Japanese-spelling5">
+                            <div class="input-frame-item">
+                                <div>
+                                    <label>英単語5：</label>
+                                    <input type="text" id="English-spelling-input5" class="English-spelling-input English-spelling5">
+                                </div>
+                                <div>
+                                    <label>日本語5：</label>
+                                    <input type="text" id="Japanese-spelling-input5" class="Japanese-spelling-input Japanese-spelling5">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="E-J-choice">
-                    <div class="choice-title">表示言語</div>
-                    <div class="choice-flex">
-                        <div id="choice1-1" class="choice1">English</div>
-                        <div id="choice1-2" class="choice2">日本語</div>
-                    </div>
-
-                    <div class="choice-flex">
-                        <div id="choice2-1" class="choice1">ランダムON</div>
-                    </div>                    
+                    <div class="E-J-choice">
+                        <div class="choice-title">表示言語</div>
+                        <div class="choice-flex">
+                            <div id="choice1-1" class="choice1">English</div>
+                            <div id="choice1-2" class="choice2">日本語</div>
+                        </div>
+                    </div>                        
                 </div>
 
                 
+                <div class="close-text-input">入力フォームを閉じる</div>
+
+                <div class="random-choice">
+                    <div class="choice-title">ランダム</div>
+                    <div class="choice-flex">
+                        <div id="choice2-1" class="choice1">ON</div>
+                    </div>  
+                </div>
+                                      
+                
             </section>
-            <div class="close-text-input">入力フォームを閉じる</div>
+            
             <section class="sec1">
                 <table class="sec1-table">
                     <tr class="frames">

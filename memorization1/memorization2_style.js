@@ -1,15 +1,10 @@
 //開閉
 $(function(){
   $(document).on('click', '.close-text-input', function(){
-      $(".text-input").hide();
-      $(this).addClass("open-text-input").removeClass("close-text-input");
-      $(this).text("入力フォームを開く");
-  });
-
-  $(document).on('click', '.open-text-input', function(){
-      $(".text-input").show();
-      $(this).addClass("close-text-input").removeClass("open-text-input");
-      $(this).text("入力フォームを閉じる");
+      $(".open-close-frame").toggle()
+      $(this).text(function(i, text){
+        return text === "入力フォームを開く" ? "入力フォームを閉じる" :"入力フォームを開く"
+      });
   });
 });
 
