@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var startX, startY, dist, threshold = 150,
+  var startX, startY, dist, threshold = 100,
     allowedTime = 300, elapsedTime, startTime;
 
   $(".box").on("touchstart", function(e) {
