@@ -11,7 +11,7 @@ $(function(){
 
 //単語入力を反映させる
 $(function(){
-  for(let i = 1; i <= 5; i++){
+  for(let i = 1; i <= 8; i++){
     $(`#English-spelling-input${i}`).on('change', function(){
       $(`#English-spelling${i}`).text($(this).val());
     });

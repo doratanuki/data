@@ -162,15 +162,16 @@ main{
     margin: 0;
     padding: 0;
 }
-
+.frames:nth-child(odd){
+    background-color: white;
+}
 
 td{
     width: 100vw;
-    height: 50px;
-    padding: 20px 0;
-    margin: 0;
+    height: 60px;
+    padding: 15px 0;
     /*font*/
-    font-size: 40px;
+    font-size: 30px;
     color: black;
     text-align: center;
 }
