@@ -1,0 +1,50 @@
+body{
+    padding: 10px;
+}
+
+.sec1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/*====== 箱 ======*/
+.box-frame{
+    position: relative;
+    background-color: rgb(255, 196, 196);
+    width: 100%;
+    height: 300px;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 150px;
+    background-color: rgb(124, 124, 124);
+}
+
+.box.left{
+    left: calc(50% - 150px);
+    background-color: white;
+    transition: all 1s;
+}
+
+.box.right{
+    left: calc(50% + 150px);
+    background-color: black;
+    transition: all 1s;
+}
+
+/*===== 記録欄 =====*/
+table{
+    background-color: antiquewhite;
+    width: 100%;
+    height: auto;
+    border: 3px solid black;
+    margin-bottom: 20px;
+}
+
+th, td{
+    border: 1px solid black;
+}
