@@ -5,7 +5,7 @@ body{
 /*=========================================
                     HEADER
 ===========================================*/
-@media screen and (max-width:899px) {
+@media screen and (max-width:900px) {
     header{
         background-image: url(images/titech.jpeg);
     }
@@ -116,7 +116,7 @@ footer{
     font-weight: 500;
 }
 
-@media screen and (max-width:899px) {
+@media screen and (max-width:900px) {
     .footer-name{
         font-size: 20px;
     }

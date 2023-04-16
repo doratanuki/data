@@ -30,7 +30,7 @@
   	width: 44%;
   }
 
-@media screen and (max-width:899px){
+@media screen and (max-width:900px){
     .openbtn{
         width: 50px;
         height: 50px;
@@ -70,7 +70,7 @@
 	color: #000;
 	text-transform: uppercase;
 }
-@media screen and (max-width:899px) {
+@media screen and (max-width:900px) {
     .openbtn span:nth-of-type(3)::after {
         font-size: 0.6rem;
     }
@@ -152,7 +152,7 @@
     /*動き*/
 	transition: all 0.6s;
 }
-@media screen and (max-width:899px){
+@media screen and (max-width:900px){
     .header-menu{
         width: 70%;
         background-color: #87a8d8;
@@ -209,7 +209,7 @@
 	font-weight: bold;
 }
 
-@media screen and (max-width:899px){
+@media screen and (max-width:900px){
     .header-menu-item a{
         font-size: 18px;
     }
