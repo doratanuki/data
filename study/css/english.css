@@ -1,0 +1,31 @@
+.delete{
+    position: relative;
+    z-index: 5;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+}
+
+.delete span:nth-of-type(1){
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    left: 26%;
+    transform: rotate(45deg);
+    transform-origin: top left;
+    width: 80%;
+    height: 3px;
+    background-color: black;
+}
+
+.delete span:nth-of-type(2){
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    right: 26%;
+    transform: rotate(-45deg);
+    transform-origin: top right;
+    width: 80%;
+    height: 3px;
+    background-color: black;
+}
