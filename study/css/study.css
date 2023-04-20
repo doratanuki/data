@@ -23,6 +23,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 0;
     /*フォント*/
     color: rgb(0, 0, 0);
     font-size: 25px;

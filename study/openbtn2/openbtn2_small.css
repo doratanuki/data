@@ -137,3 +137,8 @@
 	font-weight: bold;
     font-size: 18px;
 }
+
+.header-menu-item img{
+    width: 30px;
+    height: 30px;
+}
