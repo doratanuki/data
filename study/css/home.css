@@ -1,0 +1,33 @@
+/*ナビゲーション*/
+.header-menu ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    padding: 0px;
+}
+
+.header-menu-item{
+	list-style: none;
+    text-align: center;
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 10px auto;
+    width: 80%;
+}
+
+.header-menu-item a, .header-menu-text{
+
+
+	color: #333333;
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+    font-size: 20px;
+}
