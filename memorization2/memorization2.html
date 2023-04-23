@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Memorization No.1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="openbtn2/openbtn2.css">
+        <link rel="stylesheet" type="text/css" href="memorization2_style.css" media="screen and (min-width:300px)">
+    </head>
+
+    <body>
+        <header>
+            <!--タイトル-->
+            <div class="header-title">Memorization No.1</div>
+            <div>
+                <div class="openbtn"><span></span><span></span><span></span></div>
+                <!--メニュー-->
+                <nav class="header-menu">
+                    <ul>
+                        <li class="header-menu-item"><a href="../index.html">HOME</a></li>
+                    </ul>
+                </nav>                
+            </div>
+            <!--メニューボタン-->
+
+        </header>
+
+        <main>
+            <section class="option">
+                <div class="open-close-frame">
+                    <!--単語入力-->
+                    <div>
+                        <div class="title">単語帳作成</div>
+                        <div class="input-frame">
+                            <div class="input-frame-item">
+                                <div>
+                                    <label class="textA">英単語1：<input type="text" class="English-spelling-input English-spelling-input1">
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="textB">日本語1：<input type="text" class="Japanese-spelling-input Japanese-spelling-input1"></label>
+                                </div>
+                            </div>
+                            <div class="input-frame-item">
+                                <div>
+                                    <label class="textA">英単語2：<input type="text" class="English-spelling-input English-spelling-input2"></label>
+                                </div>
+                                <div>
+                                    <label class="textB">日本語2：<input type="text" class="Japanese-spelling-input Japanese-spelling-input2"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--追加・削除-->
+                        <div class="btn btn-add">追加</div>
+                        <div class="btn btn-delete">削除</div>
+                    </div>
+
+                    <!--言語選択-->
+                    <div class="E-J-choice">
+                        <div class="title">表示言語</div>
+                        <div class="choice-flex">
+                            <div class="btn btn-Eng">English</div>
+                            <div class="btn btn-Jap">日本語</div>
+                        </div>
+                    </div>                        
+                </div>
+
+                <!--開閉-->
+                <div class="btn btn-option">入力フォームを閉じる</div>
+                
+                <!--ランダム-->
+                <div class="random-choice">
+                    <div class="title">ランダム</div>
+                    <div class="btn btn-random">ON</div> 
+                </div>
+                                      
+                
+            </section>
+            
+            <section class="sec1">
+                <table class="sec1-table">
+                    <tr class="frames">
+                        <td class="words English-spelling English-spelling1">ENGLISH1</td>
+                        <td class="words Japanese-spelling Japanese-spelling1">日本語1</td>
+                    </tr>
+                    <tr class="frames">
+                        <td class="words English-spelling English-spelling2">ENGLISH2</td>
+                        <td class="words Japanese-spelling Japanese-spelling2">日本語2</td>
+                    </tr>
+                </table>
+
+            </section>
+        </main>
+
+
+        <footer>
+            <div class="footer-name">MagnoLife</div>
+            <div class="footer-text">Created By Doratanuki</div>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <!--btn-->
+        <script src="openbtn2/openbtn2.js"></script>
+        <script src="memorization2_style.js"></script>
+
+
+
+    </body>
+</html>

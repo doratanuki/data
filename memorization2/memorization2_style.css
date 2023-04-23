@@ -1,0 +1,212 @@
+body{
+    background-color: rgb(231, 231, 231);
+    margin: 0;
+    padding: 0;
+}
+
+/*=========================================
+                    HEADER
+===========================================*/
+header{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.header-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+@media screen and (max-width:1024px) {
+    header{
+        height: 50px;
+    }
+    .header-title{
+        font-size: 23px;
+    }
+}
+@media screen and (min-width:1025px) {
+    header{
+        height: 70px;
+    }
+    .header-title{
+        font-size: 33px;
+    }
+}
+
+
+
+
+
+
+/*=========================================
+                    MAIN
+===========================================*/
+main{
+    padding: 0 10px;
+}
+
+.option{
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*タイトル*/
+.title{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px 0;
+    width: 100%;
+    background-color: rgb(212, 212, 212);
+    border-bottom: 1px solid rgb(93, 93, 93);
+    border-top: 1px solid rgb(93, 93, 93);
+}
+
+/*====================================
+                ボタン
+======================================*/
+.btn{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px 0;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgb(0, 0, 0, 0.3);
+}
+
+.btn-add{
+    background-color: rgb(212, 166, 105);
+    width: 300px;
+    margin: 10px auto;
+}
+.btn-delete{
+    background-color: rgb(145, 176, 132);
+    width: 300px;
+    margin: 10px auto;
+}
+.btn-Eng{
+    background-color: rgb(130, 222, 223);
+    width: 200px;
+    margin: 0 5px;
+}
+.btn-Jap{
+    background-color: rgb(206, 155, 155);
+    width: 200px;
+    margin: 0 5px;
+}
+.btn-random{
+    background-color: rgb(105, 105, 105);
+    color: rgb(255, 255, 255);
+    width: 200px;
+    margin: 20px auto;
+}
+
+/*開閉ボタン*/
+.btn-option{
+    background-color: black;
+    color: #fff;
+    width: 300px;
+    border-radius: 30px;
+    margin: 0 auto 20px;
+}
+/*====================================
+                単語帳作成
+======================================*/
+.input-frame{
+    padding: 20px 0;
+}
+.input-frame-item{
+    padding: 10px;
+}
+.textB{
+    margin: 0;
+}
+input{
+    margin: 0;
+}
+
+/*====================================
+                表示言語
+======================================*/
+
+.choice-flex{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+
+/*====================================
+                単語帳
+======================================*/
+/*最初は非表示*/
+.sec1{
+    width: 100%;
+}
+
+.sec1-table{
+    margin: 0;
+    padding: 0;
+}
+
+.frames{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.frames:nth-child(odd){
+    background-color: white;
+}
+
+td{
+    width: 100vw;
+    height: 60px;
+    padding: 15px 0;
+    /*font*/
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+
+/*============================================*/
+
+.hide{
+    display: none;
+}
+
+/*=========================================
+                    FOOTER
+===========================================*/
+
+footer{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    background-color: white;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width:1024px) {
+    .footer-name{
+        font-size: 20px;
+    }
+    .footer-text{
+        font-size: 13px;
+    }
+}
+@media screen and (min-width:1025px) {
+    .footer-name{
+        font-size: 30px;
+    }
+    .footer-text{
+        font-size: 15px;
+    }
+}
