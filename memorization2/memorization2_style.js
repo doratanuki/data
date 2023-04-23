@@ -62,13 +62,11 @@ function input_text(){
 function English(){
     $('.Japanese-spelling').addClass("hide");
     $('.English-spelling').removeClass("hide");
-    $('.sec1').show();
 }
 
 function Japanese(){
   $('.English-spelling').addClass("hide");
   $('.Japanese-spelling').removeClass("hide");
-  $('.sec1').show();
 }
 
 //===============================
@@ -140,6 +138,7 @@ $(function(){
   input_text();
   change_words();
   delete_words();
+  English()
   $(".btn-option").on("click",function(){
     show_hide();
   });
@@ -155,6 +154,7 @@ $(function(){
   $(".btn-add").on("click",function(){
     add_input_text();
     input_text();
+    English();
     change_words();
   });
   $(".btn-delete").on("click",function(){
