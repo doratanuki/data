@@ -155,6 +155,7 @@ $(function(){
   $(".btn-add").on("click",function(){
     add_input_text();
     input_text();
+    change_words();
   });
   $(".btn-delete").on("click",function(){
     delete_input_text();
