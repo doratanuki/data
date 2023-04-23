@@ -62,7 +62,5 @@ $(function(){
         close_all();
         reverse();
     });
-    $('.delete').click(function(){
-        delete_text();
-    });
+    delete_text();
 });
