@@ -45,7 +45,7 @@ function show_hide(){
 //===============================
 
 function input_text(){
-  for(let i = 0; i < 8; i++){
+  for(let i = 0; i <= $(".input-frame-item").length; i++){
     $(`.English-spelling-input${i}`).on('change', function(){
       $(`.English-spelling${i}`).text($(this).val())
     });
