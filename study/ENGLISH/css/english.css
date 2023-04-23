@@ -1,0 +1,171 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #9ad0d3, #dfdfdf,#A9CBB7, #DFC7D5);
+    background-size: 200% 100%;
+    animation: bggradient 10s linear infinite;
+}
+@keyframes bggradient{
+    0%{background-position: 0% 50%;}
+    25%{background-position: 50% 50%;}
+    50%{background-position: 100% 50%;}
+    75%{background-position: 50% 50%;}
+    100%{background-position: 0% 50%;}
+}
+
+/*タイトル*/
+.title{
+    width: 100vw;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    /*フォント*/
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+.blog-title-btn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+/*ブログフレーム*/
+.blog{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.blog-frame{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px auto;
+    /*枠*/
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;        
+}
+
+
+/*ブログタイトル*/
+.blog-title{
+    /*フォント*/
+    font-size: 20px;
+    font-weight: 550;
+    /*位置*/
+    width: calc(100% - 60px - 2rem);
+    margin-left: 1rem;
+}
+
+.blog-content{
+    display: none;
+}
+
+/*ブログ内容*/
+.blog-text{
+    /*フォント*/
+    font-size: 16px;
+    /*テキスト位置*/
+    text-align:start;
+    margin: 1rem;
+}
+
+/*日付*/
+.day{
+    font-size: 11px;
+    text-align: end;
+}
+
+/*=============================================
+                    開閉ボタン
+===============================================*/
+.btn{
+    cursor: pointer;
+    position:relative;
+    width: 30px;
+    height: 30px;
+}
+.btn span:nth-of-type(1) {
+    transition: 0.5s;
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 3px;
+    background-color: black;
+    opacity: 1;
+}
+.btn span:nth-of-type(2) {
+    transition: 0.5s;
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    width: 3px;
+    height: 50%;
+    background-color: black;
+}
+
+/*===押した後===*/
+
+.btn.close span:nth-of-type(1) {
+    opacity: 0;
+    height: 50%;
+    transition: 0.5s;
+}
+.btn.close span:nth-of-type(2) {
+    width: 50%;
+    height: 3px;
+    transition: 0.5s;
+}
+
+/*=============================================
+            　　　DELETEボタン
+===============================================*/
+
+.delete{
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+}
+
+.delete span:nth-of-type(1){
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    left: 26%;
+    transform: rotate(45deg);
+    transform-origin: top left;
+    width: 80%;
+    height: 3px;
+    background-color: black;
+}
+
+.delete span:nth-of-type(2){
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    right: 26%;
+    transform: rotate(-45deg);
+    transform-origin: top right;
+    width: 80%;
+    height: 3px;
+    background-color: black;
+}
