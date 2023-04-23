@@ -53,6 +53,7 @@ function delete_text(){
 //===============================
 $(function(){
     $('.random').click(function(){
+        close_all();
         random();
     });
     $('.close-all').click(function(){
