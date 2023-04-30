@@ -1,0 +1,210 @@
+@charset "utf-8";
+/*================================
+            MENUがCLOSEに
+===================================*/
+
+/*ボタン外側*/
+.openbtn{
+	position: fixed;
+	cursor: pointer;
+    z-index: 1000;
+}
+
+/*ボタン内側*/
+.openbtn span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    height: 2px;
+	background: #000;
+  	width: 44%;
+  }
+
+
+.openbtn span:nth-of-type(1) {
+	top:26%;	
+}
+
+.openbtn span:nth-of-type(2) {
+	top:38%;
+}
+
+.openbtn span:nth-of-type(3) {
+	top:50%;
+}
+
+.openbtn span:nth-of-type(3)::after {
+	content:"Menu";
+	position: absolute;
+	top:5px;
+	left:50%;
+    transform: translateX(-50%);
+	color: #000;
+	font-size: 0.6rem;
+	text-transform: uppercase;
+}
+
+
+/*==========================================
+                activeクラス付与
+============================================*/
+
+.openbtn.active span:nth-of-type(1) {
+    top: 38%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    width: 36%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+    top: 38%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    width: 36%;
+}
+
+.openbtn.active span:nth-of-type(3)::after {
+	content:"Close";
+    opacity: 1;
+    transform: translateY(0) rotate(-45deg);
+}
+
+/*=========================================
+                開いた時の画面
+=============================================*/
+.open-menu-background{
+    display: none;
+    position:fixed;
+    z-index: 998;
+	top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.open-menu-background.panelactive{
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+.open-menu{
+    position:fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+	top:0%;
+    left:-100%;
+    height: 100%;
+	background-color:#BCD6D6;
+    box-shadow: 3px 0 6px rgba(0, 0, 0, 0.6);
+    /*動き*/
+	transition: all 0.6s;
+}
+
+
+/*アクティブクラスがついたら位置を0に*/
+/*ナビの数が増えた場合縦スクロール*/
+.open-menu.panelactive{
+    left: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+.open-menu ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 0px;
+}
+
+/*リストのレイアウト設定*/
+.open-menu-item{
+    z-index: 1000;
+	list-style: none;
+    text-align: center;   
+}
+
+.open-menu-item a{
+    z-index: 1000;
+	color: #333333;
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+    font-size: 30px;
+}
+
+@media screen and (max-width:480px){
+    /*ボタン全体の大きさ*/
+    .openbtn{
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+    }
+    /*文字*/
+    .openbtn span:nth-of-type(3)::after {
+        font-size: 0.6rem;
+    }
+    .openbtn.active span:nth-of-type(3)::after {
+        top:5px;
+        left:5px;
+    }
+    /*メニュー*/
+    .open-menu{
+        width: 60%;
+    }
+    .open-menu-item a{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:481px) and (max-width:1024px){
+    .openbtn{
+        top: 5px;
+        left: 5px;
+        width: 60px;
+        height: 60px;
+    }
+    .openbtn span:nth-of-type(3)::after {
+        font-size: 0.8rem;
+    }
+    .openbtn.active span:nth-of-type(3)::after {
+        top: 7px;
+        left:7px;
+    }
+    .open-menu{
+        width: 40%;
+    }
+    .open-menu-item a{
+        font-size: 22px;
+    }
+}
+@media screen and (min-width:1025px){
+    .openbtn{
+        top: 10px;
+        left: 10px;
+        width: 80px;
+        height: 80px;
+    }
+    .openbtn span:nth-of-type(3)::after {
+        font-size: 0.8rem;
+    }
+    .openbtn.active span:nth-of-type(3)::after {
+        top:8px;
+        left:8px;
+    }
+    .open-menu{
+        width: 30%;
+    }
+    .open-menu-item a{
+        font-size: 24px;
+    }
+}

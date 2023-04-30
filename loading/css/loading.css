@@ -1,0 +1,29 @@
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background:#333;
+}
+
+#loading-text{
+    /*Place*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+    text-align: center;
+}
+
+#loading-text p{
+    font-size: 23px;
+    font-family: "Arial Black";
+    color: rgb(255, 255, 255);
+    text-shadow: #999 2px 2px 3px;
+}
+
+#loading-text p span{
+    position: relative;
+    top: 0px;
+}
